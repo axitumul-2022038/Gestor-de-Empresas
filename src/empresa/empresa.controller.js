@@ -3,6 +3,12 @@
 import Empresa from './empresa.model.js'
 import ExcelJS from 'exceljs'
 
+//TEST
+export const test = (req, res) => {
+    console.log('test is running')
+    return res.send({ message: 'Test is running' })
+}
+
 //REGISTER
 export const register = async (req, res) => {
     try {
@@ -50,7 +56,7 @@ export const getExperiences = async (req, res) => {
     try {
         let data = req.body
         let añosEmpresa = await Empresa.find({ añosExperiencia: data.añosExperiencia })
-        return res.send({ añosEmpresa: añosEmpresa })
+        return res.send({ añosEmpresa})
     } catch (error) {
         console.error(error)
         return res.status(500).send({ message: 'Companies not found' })
@@ -60,10 +66,10 @@ export const getExperiences = async (req, res) => {
 //SEARCH BY CATEGORY
 export const getCategory = async (req, res) => {
     try {
-        let { id } = req.body
-        let company = await Empresa.find({ _category: id }).populate('category', ['name'])
-        if (!company) return res.status(404).send({ message: 'Companies not exist' });
-        return res.send({ company });
+        let {search } = req.body
+        let empresa = await Empresa.find({ category: search }).populate('category', ['nameCategory'])
+        if (!empresa) return res.status(404).send({ message: 'Companies not exist' });
+        return res.send({ empresa });
     } catch (error) {
         console.error(error);
         return res.status(500).send({ message: 'Companies not found' });
@@ -73,7 +79,7 @@ export const getCategory = async (req, res) => {
 //FROM A TO Z
 export const getAFromZ = async (req, res) => {
     try {
-        let sortAToZ = await Empresa.find().sort({ nameCompany: +1 })
+        let sortAToZ = await Empresa.find().sort({ nameEmpresa: +1 })
         return res.send({ sortAToZ: sortAToZ });
     } catch (error) {
         console.error(error);
@@ -84,7 +90,7 @@ export const getAFromZ = async (req, res) => {
 //FROM Z TO A 
 export const getZFromA = async (req, res) => {
     try {
-        let sortZToA = await Empresa.find().sort({ nameCompany: -1 })
+        let sortZToA = await Empresa.find().sort({ nameEmpresa: -1 })
         return res.send({ sortZToA: sortZToA })
     } catch (error) {
         console.error(error)
@@ -105,7 +111,7 @@ export const excelReport = async (req, res) => {
         ];
         empresas.forEach(empresas => {
             worksheet.addRow({
-                nameCompany: empresas.nameCompany,
+                nameCompany: empresas.nameEmpresa,
                 nameCategory: empresas.category.nameCategory,
                 description: empresas.category.description
             });
@@ -117,5 +123,18 @@ export const excelReport = async (req, res) => {
     } catch (error) {
         console.error(error);
         return res.status(500).send({ message: 'Error generating Excel', error: error });
+    }
+}
+
+//DELETE
+export const deleteE = async (req, res) => {
+    try {
+        let { id } = req.params
+        let deletedEmpresa = await Empresa.findOneAndDelete({ _id: id })
+        if (!deletedEmpresa) return res.status(404).send({ message: 'Empresa not found and not deleted' })
+        return res.send({ message: `Empresa with name ${deletedEmpresa.nameEmpresa} deleted successfully` });
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error deleting Empresa' })
     }
 }

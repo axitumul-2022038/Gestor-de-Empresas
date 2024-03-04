@@ -1,6 +1,13 @@
 import Category from './category.model.js'
 
+//TEST
+export const test = (req, res) => {
+    console.log('test is running')
+    return res.send({ message: 'Test is running' })
+}
 
+
+//REGISTER
 export const register = async (req, res) => {
     try {
         let data = req.body

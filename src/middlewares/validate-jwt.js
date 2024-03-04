@@ -15,6 +15,6 @@ export const validateJwt = async (req, res, next) => {
         next()
     } catch (err) {
         console.error(err)
-        return res.status(401).send({ message: 'Invalid toke' })
+        return res.status(401).send({ message: 'Invalid token' })
     }
 }

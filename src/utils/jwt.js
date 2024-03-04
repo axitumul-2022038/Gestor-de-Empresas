@@ -1,7 +1,7 @@
 'use strict'
 
 import jwt from 'jsonwebtoken'
-const secretKey = '@LlaveGestorEmpresas@'
+const secretKey = '@LlaveGestorEmpresa2022038@'
 
 export const generateJwt = async (payload) => {
     try {
