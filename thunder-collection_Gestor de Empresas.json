@@ -1,0 +1,565 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor de Empresas",
+    "dateExported": "2024-03-04T04:29:07.426Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "USER",
+            "containerId": "",
+            "created": "2024-03-04T01:36:46.992Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "CATEGORY",
+            "containerId": "",
+            "created": "2024-03-04T03:17:39.230Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "EMPRESA",
+            "containerId": "",
+            "created": "2024-03-04T03:30:02.425Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "6e73729c-6fdc-4251-8a8f-7a752f115cdc",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "test",
+            "url": "category/test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-04T03:17:29.942Z",
+            "modified": "2024-03-04T03:21:31.680Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33fea630-2447-408c-bd91-176cfd5115f9",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "register",
+            "url": "category/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T03:22:01.711Z",
+            "modified": "2024-03-04T03:51:30.854Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Autos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Donde vendan todo tipo de cosas para hacer una construccion"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a00d00b3-b699-42be-87e0-88c60e1335a6",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "test",
+            "url": "test",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-04T01:37:40.206Z",
+            "modified": "2024-03-04T03:12:08.795Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2EyNGQxN2VhNjkxOTEzMjM5ZDgiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMTkyMSwiZXhwIjoxNzA5NTMyNzIxfQ.KrqsMgx26z9RUmRcliiHmdgLeNkQAg--B9zoZGZKTpg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "27a1a425-4fe9-4d2a-94ef-87f690593f28",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "register",
+            "url": "register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T03:02:42.137Z",
+            "modified": "2024-03-04T03:02:42.137Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Jonathan"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Xitumul"
+                    },
+                    {
+                        "name": "username",
+                        "value": "patron"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "axelxitumul@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "15963247"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f51c2c52-19c3-4950-96bd-f05d5d6921c5",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "delete",
+            "url": "delete/65e53a24d17ea691913239d8",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-04T03:13:44.802Z",
+            "modified": "2024-03-04T03:14:19.139Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2EyNGQxN2VhNjkxOTEzMjM5ZDgiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMTkyMSwiZXhwIjoxNzA5NTMyNzIxfQ.KrqsMgx26z9RUmRcliiHmdgLeNkQAg--B9zoZGZKTpg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "993bf92c-c773-4c8f-a519-3079ba8fe419",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-04T03:04:20.531Z",
+            "modified": "2024-03-04T04:24:23.858Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "axelxitumul@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f42a66ca-fb19-42a8-a6cb-7fdc37eab7a8",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "update",
+            "url": "category/update/65e53ece77a8ac683e263917",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-04T03:25:38.377Z",
+            "modified": "2024-03-04T03:26:33.786Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Toda tipo de empresa que arregle carros o que venda"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5c7e4ece-4a4f-47d9-b5b1-6b0d6fc2d50c",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "040262c2-c450-4d9f-a37f-b2446b43f9e2",
+            "name": "update",
+            "url": "update/65e108494f3cc23029f75785",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-04T03:13:24.947Z",
+            "modified": "2024-03-04T03:13:24.947Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMDg0OTRmM2NjMjMwMjlmNzU3ODUiLCJ1c2VybmFtZSI6ImF4aXR1IiwibmFtZSI6IkF4ZWwiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkyNDg0NDEsImV4cCI6MTcwOTI1OTI0MX0.dsdAp6xav5Qi_unAUA5oXbsDKdTGyPV9EnvBhrPw_eU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Xitumul"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9dd5d2c3-cbe0-4fd1-8074-4e5383658182",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "delete",
+            "url": "category/delete/65e53f1377a8ac683e26391a",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-04T03:26:50.917Z",
+            "modified": "2024-03-04T03:27:22.967Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0073cf2b-02ab-4abd-8011-fd14b7d5188e",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "get",
+            "url": "category/get",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-04T03:27:43.282Z",
+            "modified": "2024-03-04T03:28:11.377Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8f14bbcb-3113-45b4-880a-15743baccb1d",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "b65a8ec5-ee2d-459d-8703-8614438c2e0b",
+            "name": "search",
+            "url": "category/search",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-04T03:28:45.988Z",
+            "modified": "2024-03-04T03:29:26.180Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Ferreterias"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b70f2db-9331-49b4-87e6-dc3d1ad0a38f",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "test",
+            "url": "empresa/test",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-04T03:30:09.108Z",
+            "modified": "2024-03-04T03:30:38.918Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0db8f0cf-eeda-4cac-8536-601b69cb33ac",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "resgister",
+            "url": "empresa/register",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-04T03:31:01.107Z",
+            "modified": "2024-03-04T03:52:31.965Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameEmpresa",
+                        "value": "Honda"
+                    },
+                    {
+                        "name": "añosExperiencia",
+                        "value": "5"
+                    },
+                    {
+                        "name": "nivelDeImpacto",
+                        "value": "high"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e54542f8a5aa5c3f35235f"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "266b0973-93f8-4557-bbb3-2df3d91fcd68",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "update",
+            "url": "empresa/update/65e5417062b3450a4cd161bb",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-03-04T03:35:45.431Z",
+            "modified": "2024-03-04T03:36:27.178Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "añosExperiencia",
+                        "value": "55"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "75cb11cb-9f67-4a04-b3ff-7f06f6696c8e",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "delete",
+            "url": "empresa/delete/65e542486b407ab8c60b49b3",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-04T03:39:00.933Z",
+            "modified": "2024-03-04T03:39:30.530Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3abdf4c1-84c8-475f-b5e5-1ea89a36104f",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "getCompany",
+            "url": "empresa/getCompany",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-04T03:39:51.549Z",
+            "modified": "2024-03-04T03:40:30.724Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "54001781-3bdc-4026-9eea-738240af41ad",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "getExperiences",
+            "url": "empresa/getExperiences",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-04T03:41:59.644Z",
+            "modified": "2024-03-04T04:08:46.683Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "añosExperiencia",
+                        "value": "5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "74daebcf-30ee-4ef7-bc12-116a17cf9c56",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "getAZ",
+            "url": "empresa/getAZ",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-03-04T03:44:22.956Z",
+            "modified": "2024-03-04T03:44:45.420Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66198945-e528-4b09-88dc-54dd6ecbc1fb",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "getZA",
+            "url": "empresa/getZA",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-04T03:45:11.505Z",
+            "modified": "2024-03-04T03:45:28.849Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c09ed63d-fb6e-4c34-b58a-0fa3c1cce800",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "excelReport",
+            "url": "empresa/excelReport",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-04T03:46:00.304Z",
+            "modified": "2024-03-04T03:46:24.801Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "84b8f28a-a17b-491f-a8a5-fe9efedff41e",
+            "colId": "641fac11-53f5-4e52-8c57-93c874cc2d97",
+            "containerId": "3f47a52b-6dbf-460d-8998-be4ff20536c5",
+            "name": "getCategory",
+            "url": "empresa/getCategory",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-03-04T04:10:28.612Z",
+            "modified": "2024-03-04T04:20:17.972Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2RjZmI3MGY3NzQ2Yzk4YTcwMTEiLCJ1c2VybmFtZSI6InBhdHJvbiIsIm5hbWUiOiJKb25hdGhhbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUyMjQ4NCwiZXhwIjoxNzA5NTMzMjg0fQ.3bRV6lS4wckVqdohx9Z7WffmrKShM9vcAnxLv8mpJyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "65e5453bf8a5aa5c3f35235c"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2737/"
+        }
+    }
+}
