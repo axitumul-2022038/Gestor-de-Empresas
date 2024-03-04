@@ -23,18 +23,11 @@ export const register = async (req, res) => {
     }
 }
 
-export const login = async (req, res) => {
-    try {
-        let { username, email, password } = req.body;
-        let user;
-        if (username) {
-            user = await User.findOne({ username });
-        } else if (email) {
-            user = await User.findOne({ email });
-        } else {
-            return res.status(400).send({ message: 'Username or email is required' });
-        }
-        if (user && await checkPassword(password, user.password)) {
+export const login = async(req, res)=>{
+    try{
+        let { username, password , email} = req.body
+        let user = await User.findOne({$or:[{username}, {email}]}) 
+        if(user && await checkPassword(password, user.password)){
             let loggedUser = {
                 uid: user._id,
                 username: user.username,
@@ -44,16 +37,16 @@ export const login = async (req, res) => {
             let token = await generateJwt(loggedUser)
             return res.send(
                 {
-                    message: `Welcome ${loggedUser.name}`,
+                    message: `Welcome ${loggedUser.name}`, 
                     loggedUser,
                     token
                 }
             )
         }
-        return res.status(404).send({ message: 'Invalid credentials' })
-    } catch (err) {
+        return res.status(404).send({message: 'Invalid credentials'})
+    }catch(err){
         console.error(err)
-        return res.status(500).send({ message: 'Error to login' })
+        return res.status(500).send({message: 'Error to login'})
     }
 }
 
